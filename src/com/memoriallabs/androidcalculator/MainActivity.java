@@ -51,20 +51,54 @@ public class MainActivity extends ActionBarActivity implements OnClickListener {
 		setContentView(R.layout.activity_main);
 
 		// Set Numerical buttons
+		btnNumZero = (Button) findViewById(R.id.btnNumZero);
+		btnNumOne = (Button) findViewById(R.id.btnNumOne);
+		btnNumTwo = (Button) findViewById(R.id.btnNumTwo);
+		btnNumThree = (Button) findViewById(R.id.btnNumThree);
+		btnNumFour = (Button) findViewById(R.id.btnNumFour);
+		btnNumFive = (Button) findViewById(R.id.btnNumFive);
+		btnNumSix = (Button) findViewById(R.id.btnNumSix);
+		btnNumSeven = (Button) findViewById(R.id.btnNumSeven);
+		btnNumEight = (Button) findViewById(R.id.btnNumEight);
+		btnNumNine = (Button) findViewById(R.id.btnNumNine);
 		
 		// Set Logic buttons		
 		btnAdd = (Button) findViewById(R.id.btnAdd);
 		btnMinus = (Button) findViewById(R.id.btnMinus);
 		btnMultiply = (Button) findViewById(R.id.btnMultiply);
 		btnDivide = (Button) findViewById(R.id.btnDivide);
+		btnClear = (Button) findViewById(R.id.btnClear);
+		btnDelete = (Button) findViewById(R.id.btnDelete);
+		btnPeriod = (Button) findViewById(R.id.btnPeriod);
+		btnNegToggle = (Button) findViewById(R.id.btnNegToggle);
+		btnEquals = (Button) findViewById(R.id.btnEquals);
 		
 		tvResult = (TextView) findViewById(R.id.tvResult);
 		
-		// set button listeners
+		// set button listeners		
+		// Logic listeners
 		btnAdd.setOnClickListener((OnClickListener) this);
 		btnMinus.setOnClickListener(this);
 		btnMultiply.setOnClickListener(this);
 		btnDivide.setOnClickListener(this);
+		btnClear.setOnClickListener(this);
+		btnDelete.setOnClickListener(this);
+		btnPeriod.setOnClickListener(this);
+		btnNegToggle.setOnClickListener(this);
+		btnEquals.setOnClickListener(this);
+		
+		// Numeric Listeners
+		btnNumZero.setOnClickListener(this);
+		btnNumOne.setOnClickListener(this);
+		btnNumTwo.setOnClickListener(this);
+		btnNumThree.setOnClickListener(this);
+		btnNumFour.setOnClickListener(this);
+		btnNumFive.setOnClickListener(this);
+		btnNumSix.setOnClickListener(this);
+		btnNumSeven.setOnClickListener(this);
+		btnNumEight.setOnClickListener(this);
+		btnNumNine.setOnClickListener(this);
+		
 		
 	}
 
