@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    
+    <TextView
+        android:id="@+id/androidCalculatorHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginTop="3pt"
+        android:gravity="center_horizontal"
+        android:text="Simple Calculator"
+        android:textSize="12pt" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginTop="3pt"
+        android:gravity="center_horizontal"
+        android:textSize="12pt" >
+    </TextView>
+    
+    <!-- Begin Numpad -->
+    <!-- Row 1: clear, /, x, delete -->
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginTop="3pt" >
+
+        <!-- clear button -->
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="(C)"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- Divide button  -->
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- Multiply button  -->
+        <Button
+            android:id="@+id/btnMultiply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="x"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- Delete Button  -->
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Del"
+            android:textSize="8pt" >
+        </Button>
+    </LinearLayout>    
+    
+    <!-- Row 2: 7, 8, 9, - -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginTop="3pt" >
+
+        <!-- num 7 button -->
+        <Button
+            android:id="@+id/btnNumSeven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- num 8 button  -->
+        <Button
+            android:id="@+id/btnNumEight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- num 9 button  -->
+        <Button
+            android:id="@+id/btnNumNine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- Minus Button  -->
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="8pt" >
+        </Button>
+    </LinearLayout>
+    
+    <!-- Row 3: 4, 5, 6, + -->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginTop="3pt" >
+
+        <!-- num 4 button -->
+        <Button
+            android:id="@+id/btnNumFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- num 5 button  -->
+        <Button
+            android:id="@+id/btnNumFive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- num 6 button  -->
+        <Button
+            android:id="@+id/btnNumSix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- Add Button  -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="8pt" >
+        </Button>
+    </LinearLayout>
+    
+    <!-- Row 4: 1, 2, 3, = -->
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginTop="3pt" >
+
+        <!-- num 1 button -->
+        <Button
+            android:id="@+id/btnNumOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- num 2 button  -->
+        <Button
+            android:id="@+id/btnNumTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- num 3 button  -->
+        <Button
+            android:id="@+id/btnNumThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- Equals Button  -->
+        <Button
+            android:id="@+id/btnEquals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="="
+            android:textSize="8pt" >
+        </Button>
+    </LinearLayout>
+    
+    <!-- Row 5: 0, ., +/-, = -->
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginTop="3pt" >
+
+        <!-- num 0 button -->
+        <Button
+            android:id="@+id/btnNumZero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- period button  -->
+        <Button
+            android:id="@+id/btnPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="."
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- +/- toggle button  -->
+        <Button
+            android:id="@+id/btnNegToggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+/-"
+            android:textSize="8pt" >
+        </Button>
+
+        <!-- Equals Button  -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textSize="8pt" >
+        </Button>
+    </LinearLayout>
+    
+</LinearLayout>
